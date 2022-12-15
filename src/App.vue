@@ -11,8 +11,8 @@
   </router-view>
   <footer>
     <div class="project">
-      <a href="https://github.com/ssshooter/ps-trophy" target="_blank">
-        PS-trophy-displayer
+      <a href="https://github.com/ssshooter/PSN-node" target="_blank">
+        PSN-node & PSN-node-displayer
       </a>
     </div>
     <div class="author">
