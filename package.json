@@ -1,0 +1,24 @@
+{
+  "name": "ps-trophy",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "dbuild": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "v-lazy-image": "^2.1.1",
+    "vue": "^3.2.36",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.0",
+    "sass": "^1.49.9",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  }
+}

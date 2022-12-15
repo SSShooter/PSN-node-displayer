@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Noto+Sans+SC:wght@300&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>晒晒奖杯</title>
+  <style>
+    @font-face {
+      font-family: 'iconfont';
+      /* project id 3239561 */
+      src: url('');
+      src: url('?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_3239561_zotedm222vo.woff2') format('woff2'),
+        url('//at.alicdn.com/t/font_3239561_zotedm222vo.woff') format('woff'),
+        url('//at.alicdn.com/t/font_3239561_zotedm222vo.ttf') format('truetype'),
+        url('#iconfont') format('svg');
+    }
+
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+      background-color: #f2f3f7;
+      /* background-color: #003791; */
+      /* background-color: #0e6cc4; */
+      /* filter: invert(); */
+    }
+
+    img {
+      /* filter: invert(); */
+    }
+
+    .wave {
+      position: fixed;
+      top: 0;
+      transform: rotate(80deg) translate(5px, 107px);
+      left: 0;
+    }
+
+    .wave>div {
+      width: 1500px;
+      height: 1300px;
+      margin-left: -150px;
+      margin-top: -250px;
+      transform-origin: 50% 48%;
+      border-radius: 43%;
+      opacity: 0.4;
+
+      position: fixed;
+      top: 3%;
+      left: 10%;
+    }
+
+    .wave--one {
+      background: rgb(197, 197, 197);
+      animation: drift 70000ms infinite linear;
+    }
+
+    .wave--two {
+      animation: drift 30000ms infinite linear;
+      opacity: 0.1;
+      background: black;
+    }
+
+    .wave--three {
+      animation: drift 75000ms infinite linear;
+      background-color: #eeeeee;
+    }
+
+    @keyframes drift {
+      from {
+        transform: rotate(0deg);
+      }
+
+      from {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="wave">
+    <div class="wave--one"></div>
+    <div class="wave--two"></div>
+    <div class="wave--three"></div>
+  </div> -->
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
