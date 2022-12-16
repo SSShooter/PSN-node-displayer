@@ -36,3 +36,13 @@ see [PSN-node](https://github.com/ssshooter/PSN-node)
 - https://codepen.io/Krupupakku/pen/MWKqoXW
 - https://codepen.io/Airwavess/pen/ExPqoyX
 - https://codepen.io/ahmed_mohaisen/pen/xxwOjre
+
+## Screensot
+
+### Game list
+
+<img src="https://github.com/ssshooter/PSN-node-displayer/blob/master/screenshot/gameList.png?raw=true" width="300">
+
+### Trophy list
+
+<img src="https://github.com/ssshooter/PSN-node-displayer/blob/master/screenshot/trophyList.png?raw=true" width="300">
