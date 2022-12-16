@@ -1,5 +1,7 @@
 # PSN-node-displayer
 
+[中文文档](https://github.com/ssshooter/PSN-node-displayer/blob/master/README.cn.md)
+
 DEMO [psn-trophy.ssshooter.com](https://psn-trophy.ssshooter.com/)
 
 All data fetched from playstation API will be cached 24 hours, so you may not get the newest data. 
