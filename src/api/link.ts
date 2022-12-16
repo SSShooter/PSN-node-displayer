@@ -1,7 +1,6 @@
 import axios from 'axios'
 const link = axios.create({
-  // baseURL: 'http://localhost:2333',
-  baseURL: 'https://ps-trophy.onrender.com/',
+  baseURL: import.meta.env.VITE_REQUEST_URL as string,
 })
 link.interceptors.response.use(
   function (response) {

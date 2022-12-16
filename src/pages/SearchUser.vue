@@ -1,7 +1,7 @@
 <template>
   <div v-loading="loading" class="search-page">
     <input placeholder="请输入 PSN ID" type="text" v-model="searchTerm" />
-    <button @click="searchPlayer">搜索</button>
+    <button @click="searchPlayer">Search</button>
     <div class="msg">{{ message }}</div>
   </div>
 </template>
@@ -25,21 +25,18 @@ export default defineComponent({
       const data = await searchPlayer(this.searchTerm)
       this.loading = false
       const match = data.domainResponses[0].results[0]
-      console.log(match)
-      if (match && match.socialMetadata.onlineId) {
-        if (
-          match.socialMetadata.onlineId.toLowerCase() ===
-          this.searchTerm.toLowerCase()
-        ) {
-          this.$router.push({
-            path: '/userPage',
-            query: {
-              accountId: match.socialMetadata.accountId,
-            },
-          })
-        }
+      if (
+        match?.socialMetadata.onlineId.toLowerCase() ===
+        this.searchTerm.toLowerCase()
+      ) {
+        this.$router.push({
+          path: '/userPage',
+          query: {
+            accountId: match.socialMetadata.accountId,
+          },
+        })
       } else {
-        this.message = '未搜索到当前 ID'
+        this.message = 'PSN ID Not Found'
       }
     },
   },
