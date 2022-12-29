@@ -1,7 +1,7 @@
 <template>
   <div v-loading="loading" class="search-page">
     <input placeholder="请输入 PSN ID" type="text" v-model="searchTerm" />
-    <button @click="searchPlayer">Search</button>
+    <button @click="searchPlayer" :disabled="!searchTerm">Search</button>
     <div class="msg">{{ message }}</div>
   </div>
 </template>
