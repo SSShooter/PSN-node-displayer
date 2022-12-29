@@ -18,6 +18,14 @@ export default defineComponent({
       message: '',
     }
   },
+  watch: {
+    searchTerm() {
+      // clear error message after searchTerm changed
+      if (this.message) {
+        this.message = ''
+      }
+    }
+  },
   methods: {
     async searchPlayer() {
       this.loading = true
