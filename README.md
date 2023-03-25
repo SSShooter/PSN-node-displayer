@@ -29,7 +29,7 @@ Deploy with Vercel: [![Deploy with Vercel](https://vercel.com/button)](https://v
 
 ## APIs
 
-see [PSN-node](https://github.com/ssshooter/PSN-node)
+See [PSN-node](https://github.com/ssshooter/PSN-node)
 
 ## Thanks
 

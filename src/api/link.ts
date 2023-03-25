@@ -1,6 +1,6 @@
 import axios from 'axios'
 const link = axios.create({
-  baseURL: import.meta.env.VITE_REQUEST_URL as string,
+  baseURL: import.meta.env.VITE_REQUEST_URL + '/psn',
 })
 link.interceptors.response.use(
   function (response) {
